@@ -1,0 +1,16 @@
+# Datos y archivos pesados
+data/
+*.csv
+*.parquet
+*.zip
+
+#Entorno virtual y credenciales.
+.env
+venv/
+env/
+*.json
+.vscode/
+
+#Python
+__pycache__/
+.ipynb_checkpoints/
