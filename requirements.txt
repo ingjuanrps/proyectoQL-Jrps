@@ -1,0 +1,10 @@
+pandas
+numpy
+pyarrow
+fastparquet
+google-cloud-storage
+google-cloud-bigquery
+db_dtypes
+matplotlib
+seaborn
+scikit-learn
