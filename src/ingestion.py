@@ -8,16 +8,15 @@ import numpy as np  # Numpy - Operaciones numéricas usadas internamente por Pan
 from google.cloud import storage
 
 # --- CONFIGURACIÓN ---
-# "data/raw/paysim.csv"  # Ruta local del CVS de KAGGLE
+# Ruta local del CVS de KAGGLE
 RAW_DATA_PATH = os.getenv("RAW_DATA_PATH")
 # Ruta local donde se guardara la versión Parquet
-# "data/processed/paysim.parquet"
 PROCESSED_DATA_PATH = os.getenv("PROCESSED_DATA_PATH")
-# "jrps-proyecto-ql-2"  # Bucket del proyecto.
+# Bucket del proyecto.
 GCS_BUCKET_NAME = os.getenv("GCS_BUCKET_NAME")
 # Ruta del contenedor en GCS, donde se guardara el Bucket.
 # Si se ejecuta de nuevo este archivo esta ruta sobre escribe el archivo
-GCS_BLOB_NAME = os.getenv("GCS_BLOB_NAME")  # "raw/paysim.parquet"
+GCS_BLOB_NAME = os.getenv("GCS_BLOB_NAME")
 
 # Función que recibe un DataFrame y Devuelve otro DataFrame
 
