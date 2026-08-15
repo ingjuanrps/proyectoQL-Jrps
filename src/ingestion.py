@@ -1,5 +1,6 @@
 from google.api_core.retry import Retry
 import os  # OS- Permite interactuar con el sistema operativo
+from dotenv import load_dotenv
 import time  # time - Ayuda a medir el rendimiento y tiempo exacto de ejecucion del proceso en segudos
 import pandas as pd  # Pandas - Herramienta para manipular estructura de datos
 import numpy as np  # Numpy - Operaciones numéricas usadas internamente por Pandas
@@ -7,13 +8,16 @@ import numpy as np  # Numpy - Operaciones numéricas usadas internamente por Pan
 from google.cloud import storage
 
 # --- CONFIGURACIÓN ---
-RAW_DATA_PATH = "data/raw/paysim.csv"  # Ruta local del CVS de KAGGLE
+# "data/raw/paysim.csv"  # Ruta local del CVS de KAGGLE
+RAW_DATA_PATH = os.getenv("RAW_DATA_PATH")
 # Ruta local donde se guardara la versión Parquet
-PROCESSED_DATA_PATH = "data/processed/paysim.parquet"
-GCS_BUCKET_NAME = "jrps-proyecto-ql-2"  # Bucket del proyecto.
+# "data/processed/paysim.parquet"
+PROCESSED_DATA_PATH = os.getenv("PROCESSED_DATA_PATH")
+# "jrps-proyecto-ql-2"  # Bucket del proyecto.
+GCS_BUCKET_NAME = os.getenv("GCS_BUCKET_NAME")
 # Ruta del contenedor en GCS, donde se guardara el Bucket.
 # Si se ejecuta de nuevo este archivo esta ruta sobre escribe el archivo
-GCS_BLOB_NAME = "raw/paysim.parquet"
+GCS_BLOB_NAME = os.getenv("GCS_BLOB_NAME")  # "raw/paysim.parquet"
 
 # Función que recibe un DataFrame y Devuelve otro DataFrame
 
