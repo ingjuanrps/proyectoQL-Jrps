@@ -4,13 +4,20 @@ data/
 *.parquet
 *.zip
 
-#Entorno virtual y credenciales.
+# Entornos virtuales y configuración IDE
 .env
+.venv/
 venv/
 env/
-*.json
 .vscode/
 
-#Python
+# Ignorar llaves/credenciales JSON de Google Cloud
+*key*.json
+*credentials*.json
+*gcp*.json
+*service_account*.json
+
+# Python y Jupyter
 __pycache__/
+*.py[cod]
 .ipynb_checkpoints/
