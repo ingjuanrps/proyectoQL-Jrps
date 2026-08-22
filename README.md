@@ -28,7 +28,7 @@ El tablero monitorea métricas operativas y financieras en tiempo real:
 - **Filtros dinámicos:** Por canal (`TRANSFER`, `CASH_OUT`) y estado de operación.
 - **Métricas clave (KPIs):** Volumen total ($317.5B+ USD) y saldo total preservado en riesgo.
 
-![alt text](image.png)
+![Dashboard Ejecutivo](assets/dashboard.png)
 
 ---
 

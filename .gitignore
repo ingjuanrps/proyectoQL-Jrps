@@ -31,3 +31,4 @@ assets/*
 #Excepciones:
 !assets/escudo_centro.jpg
 !assets/logo.jpg
+!assets/dashboard.png
