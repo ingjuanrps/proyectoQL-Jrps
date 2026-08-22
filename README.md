@@ -32,6 +32,14 @@ El tablero monitorea métricas operativas y financieras en tiempo real:
 
 ---
 
+## 💻 Vertex AI / BigQuery ML
+
+- **Vertex AI / BigQuery ML:** Modelo XGBoost (`BOOSTED_TREE_CLASSIFIER`) entrenado y evaluado nativamente dentro de BigQuery con SQL.
+
+![BigQuery](assets/entrenando_evaluando.png)
+
+---
+
 ## 🛠️ Tecnologías Utilizadas
 
 - **Lenguajes:** Python (Pandas, Scikit-learn, XGBoost, Matplotlib), SQL (BigQuery Dialect).
@@ -39,7 +47,3 @@ El tablero monitorea métricas operativas y financieras en tiempo real:
 - **Herramientas:** VS Code, Git/GitHub, Looker Studio.
 
 ---
-
-- **Vertex AI / BigQuery ML:** Modelo XGBoost (`BOOSTED_TREE_CLASSIFIER`) entrenado y evaluado nativamente dentro de BigQuery con SQL.
-
-![BigQuery](assets/entrenando_evaluando.png)
