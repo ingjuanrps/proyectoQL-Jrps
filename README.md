@@ -42,4 +42,4 @@ El tablero monitorea métricas operativas y financieras en tiempo real:
 
 - **Vertex AI / BigQuery ML:** Modelo XGBoost (`BOOSTED_TREE_CLASSIFIER`) entrenado y evaluado nativamente dentro de BigQuery con SQL.
 
-![BigQuery](C:\Users\ingju\Documents\proyectoQL_Jrps\assets\entrenando_evaluando.png)
+![BigQuery](assets/entrenando_evaluando.png)
