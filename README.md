@@ -37,3 +37,9 @@ El tablero monitorea métricas operativas y financieras en tiempo real:
 - **Lenguajes:** Python (Pandas, Scikit-learn, XGBoost, Matplotlib), SQL (BigQuery Dialect).
 - **Cloud Platform:** Google Cloud Platform (BigQuery, GCS).
 - **Herramientas:** VS Code, Git/GitHub, Looker Studio.
+
+---
+
+- **Vertex AI / BigQuery ML:** Modelo XGBoost (`BOOSTED_TREE_CLASSIFIER`) entrenado y evaluado nativamente dentro de BigQuery con SQL.
+
+![Dashboard Ejecutivo](assets/entrenando_evaluando.png)
