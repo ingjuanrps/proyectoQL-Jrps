@@ -1,10 +1,10 @@
-# 🛡️ Financial Fraud Detection Platform (End-to-End GCP & Machine Learning)
+# 🛡️ Financial Fraud Detection Platform (End-to-End GCP & Machine Learning).
 
 Sistema integral de ingeniería de datos, análisis forense estadístico y aprendizaje automático para la detección, clasificación y prevención de fraudes financieros en transacciones electrónicas masivas sobre **Google Cloud Platform (GCP)**.
 
 ---
 
-## 📐 Arquitectura y Flujo Técnico
+## 📐 Arquitectura y Flujo Técnico.
 
 1. **Ingesta y Almacenamiento:** Carga de datos crudos (`data/raw/`) hacia Google Cloud Storage (GCS) y estructuración en Google BigQuery como Data Warehouse.
 2. **Calidad de Datos & Reglas GIGO:** Filtrado de inconsistencias operativas (`amount > 0`) y limpieza transaccional.
@@ -15,7 +15,7 @@ Sistema integral de ingeniería de datos, análisis forense estadístico y apren
 
 ---
 
-## 📊 Métricas Clave del Modelo (XGBoost)
+## 📊 Métricas Clave del Modelo (XGBoost).
 
 - **Recall (Fraude):** **99.7%** (Identificación de 1,638 de 1,643 casos de fraude).
 - **Precision (Fraude):** **91.0%** (Alta certeza en alertas operativas).
@@ -24,9 +24,9 @@ Sistema integral de ingeniería de datos, análisis forense estadístico y apren
 
 ---
 
-## 📸 Evidencia Fotográfica y Flujo por Componentes
+## 📸 Fotográfias y Flujo por Componentes.
 
-### 1. Ingesta de Datos y Scripts de Automatización (`src/`)
+### 1. Ingesta de Datos y Scripts de Automatización (`src/`).
 
 Pipeline desarrollado en Python dentro de VS Code para ingestar datos crudos hacia BigQuery y ejecutar las primeras pruebas de calidad.
 
@@ -36,7 +36,7 @@ Pipeline desarrollado en Python dentro de VS Code para ingestar datos crudos hac
 
 ---
 
-### 2. Transformaciones SQL y BigQuery ML (`sql/`)
+### 2. Transformaciones SQL y BigQuery ML (`sql/`).
 
 Procesamiento analítico en BigQuery SQL estructurado por scripts ordenados:
 
@@ -95,7 +95,7 @@ Procesamiento analítico en BigQuery SQL estructurado por scripts ordenados:
 
 ---
 
-### 3. Exploración en Jupyter Notebooks (`notebook/`)
+### 3. Exploración en Jupyter Notebooks (`notebook/`).
 
 Pruebas estadísticas de Benford y entrenamiento del clasificador XGBoost serializado en formato JSON (`xgb_fraud_model.json`).
 
@@ -107,7 +107,7 @@ Pruebas estadísticas de Benford y entrenamiento del clasificador XGBoost serial
 
 ---
 
-### 4. 💻 Vertex AI / BigQuery ML
+### 4. 💻 Vertex AI / BigQuery ML.
 
 - **Vertex AI / BigQuery ML:** Modelo XGBoost (`BOOSTED_TREE_CLASSIFIER`) entrenado y evaluado nativamente dentro de BigQuery con SQL.
 
@@ -115,7 +115,7 @@ Pruebas estadísticas de Benford y entrenamiento del clasificador XGBoost serial
 
 ---
 
-### 5. 🖥️ Dashboard Ejecutivo en Looker Studio (`10_dashboard_Looker_Studio.sql`)
+### 5. 🖥️ Dashboard Ejecutivo en Looker Studio (`10_dashboard_Looker_Studio.sql`).
 
 El tablero monitorea métricas operativas y financieras en tiempo real:
 
@@ -126,7 +126,7 @@ El tablero monitorea métricas operativas y financieras en tiempo real:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas.
 
 - **Lenguajes:** Python (Pandas, Scikit-Learn, XGBoost, Matplotlib, Seaborn), SQL (BigQuery Dialect).
 - **Cloud Infrastructure (GCP):** Google Cloud Storage (GCS), BigQuery, BigQuery ML / Vertex AI.
@@ -134,7 +134,7 @@ El tablero monitorea métricas operativas y financieras en tiempo real:
 
 ---
 
-## 📁 Estructura del Repositorio (`proyectoQL_Jrps`)
+## 📁 Estructura del Repositorio (`proyectoQL_Jrps`).
 
 ```text
 proyectoQL_Jrps/
