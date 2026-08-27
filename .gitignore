@@ -23,12 +23,9 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Ignorar todos los archivos
-*.png
 *.jpg
 *.jpeg
 *.gif
-assets/*
 #Excepciones:
 !assets/escudo_centro.jpg
 !assets/logo.jpg
-!assets/dashboard.png
